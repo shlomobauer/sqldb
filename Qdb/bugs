@@ -1,0 +1,6 @@
+bugs
+
+1. happy parser isn't handling precedent for "and" and "or"
+operators.
+  test14.sql  a or b and c ==> (a or b) and c -- BAD, expect: a or (b and c)
+  
