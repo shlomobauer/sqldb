@@ -28,8 +28,9 @@ import Treedef
   ident		                        { TIdent _ $$ }
   strlit				{ TStringLiteral _ $$ }
 
+%left or
+%left and
 %right '='
-%left and or
 
 %%
 
